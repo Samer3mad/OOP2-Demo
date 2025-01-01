@@ -1,4 +1,5 @@
-﻿using System.Net.NetworkInformation;
+﻿using OOP2_Demo.Encapsulation;
+using System.Net.NetworkInformation;
 
 namespace OOP2_Demo
 {
@@ -6,6 +7,7 @@ namespace OOP2_Demo
     {
         static void Main(string[] args)
         {
+            #region Struct
             Point P1;
             //Decleration
 
@@ -15,7 +17,18 @@ namespace OOP2_Demo
             Console.WriteLine(P1.x);
             Console.WriteLine(P1.y);
 
-            Console.WriteLine(P1.ToString()); // Namespace.datatype name
+            Console.WriteLine(P1.ToString()); // Namespace.datatype name 
+            #endregion
+
+            #region MyRegion
+            Employee employee = new Employee(7, "Samer Emad", 7000);
+            employee.SetId(1); //Set ID
+            employee.Name = "Samer Zaki";
+            Console.WriteLine(employee.Name);
+            Console.WriteLine(employee.GetId()); // get Id
+
+            Console.WriteLine(employee);
+            #endregion
         }
     }
 }
