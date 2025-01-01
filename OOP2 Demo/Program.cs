@@ -15,7 +15,7 @@ namespace OOP2_Demo
             Console.WriteLine(P1.x);
             Console.WriteLine(P1.y);
 
-            Console.WriteLine(P1.ToString()); // Namespace.data type name
+            Console.WriteLine(P1.ToString()); // Namespace.datatype name
         }
     }
 }
