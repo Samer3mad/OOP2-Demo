@@ -30,6 +30,7 @@ namespace OOP2_Demo
             Console.WriteLine(employee);
             #endregion
 
+            #region PhoneBook
             PhoneBook note = new PhoneBook(10);
             note.AddPerson(0, "Samer", 111);
             note.AddPerson(1, "Samir", 222);
@@ -39,6 +40,23 @@ namespace OOP2_Demo
             Console.WriteLine(note.GetPersonNumber("Ahmed"));
 
             Console.WriteLine(note.ToString());
+            #endregion
+
+            #region Class
+            Car C1;
+            // Declare for reference of type car
+            // this ref can refere an object of type car
+            // or another type
+            // CLR allocate uninitalized bytes stck
+            // CLR allocates 0 bytes in heap
+
+            C1 = new Car(77, "BMW", 180);
+
+            C1 = new Car(3333, "KIA");
+
+            Console.WriteLine(C1); 
+            #endregion
+
         }
     }
 }
