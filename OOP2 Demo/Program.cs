@@ -20,7 +20,7 @@ namespace OOP2_Demo
             Console.WriteLine(P1.ToString()); // Namespace.datatype name 
             #endregion
 
-            #region MyRegion
+            #region Encapsulation
             Employee employee = new Employee(7, "Samer Emad", 7000);
             employee.SetId(1); //Set ID
             employee.Name = "Samer Zaki";
@@ -29,6 +29,16 @@ namespace OOP2_Demo
 
             Console.WriteLine(employee);
             #endregion
+
+            PhoneBook note = new PhoneBook(10);
+            note.AddPerson(0, "Samer", 111);
+            note.AddPerson(1, "Samir", 222);
+            note.AddPerson(2, "Sameh", 333);
+
+            note.SetNumber("Ahmed", 111);
+            Console.WriteLine(note.GetPersonNumber("Ahmed"));
+
+            Console.WriteLine(note.ToString());
         }
     }
 }
