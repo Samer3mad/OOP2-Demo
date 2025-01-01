@@ -21,6 +21,7 @@ namespace OOP2_Demo
         ///}
 
         //Constructor
+
         public Point(int x, int y)
         {
             this.x = x;
