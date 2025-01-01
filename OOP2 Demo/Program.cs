@@ -54,9 +54,25 @@ namespace OOP2_Demo
 
             C1 = new Car(3333, "KIA");
 
-            Console.WriteLine(C1); 
+            Console.WriteLine(C1);
             #endregion
 
+            #region Inheritence - Parent
+            Parent p = new Parent(1, 2);
+            p.X = 11;
+            p.Y = 22;
+            Console.WriteLine(p);
+            Console.WriteLine(p.product());
+            #endregion
+
+            #region Onheritence - Child
+            Child c = new Child(1, 2, 3);
+            c.X = 12;
+            c.Y = 13;
+            c.Z = 14;
+            Console.WriteLine(c.ToString());
+
+            #endregion
         }
     }
 }
